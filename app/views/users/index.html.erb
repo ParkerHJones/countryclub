@@ -1,0 +1,9 @@
+<h1><%="Show all users"%></h1>
+<p>Find me in app/views/users/index.html.erb</p>
+
+
+<%  @users.each do | user | %>
+
+<%=link_to user[:name], user_path(user)%>
+
+<% end %>
